@@ -13,19 +13,23 @@ export default function Menu() {
             <MenubarTrigger><Link href="/">Home</Link></MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
-            <MenubarTrigger><Link href="directory">Directory</Link></MenubarTrigger>
+            <MenubarTrigger><Link href="/directory">Directory</Link></MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
-            <MenubarTrigger>Game Jams</MenubarTrigger>
-            <MenubarContent className="w-md p-2 m-2">
-                <div className="cursor-pointer hover:bg-secondary hover:underline">Art and Logos</div></MenubarContent>
+            <MenubarTrigger className="cursor-auto">Game Jams</MenubarTrigger>
+            <MenubarContent className="w-md p-2 mx-2 ">
+                <div className="cursor-pointer hover:bg-secondary hover:underline">
+                    <Link href="/events/gamejams/april2026">April 2026</Link>
+                </div>
+            </MenubarContent>
         </MenubarMenu>
         <MenubarMenu>
-            <MenubarTrigger>Resources</MenubarTrigger>
-            <MenubarContent className="w-md p-2 m-2">
-                <div className="cursor-pointer hover:bg-secondary hover:underline">Art and Logos</div>
+            <MenubarTrigger className="cursor-auto">Resources</MenubarTrigger>
+            <MenubarContent className="w-md p-2 mx-2 ">
+                <div className="cursor-pointer hover:bg-secondary hover:underline">
+                    <Link href="/resources/logos">Art and Logos</Link></div>
                 <MenubarSeparator />
-                <div className=" cursor-pointer hover:bg-secondary hover:underline">Officer/Mod Area</div>
+                <div className=" cursor-pointer hover:bg-secondary hover:underline"> <Link href="/resources/mods">Officer/Mod Area</Link></div>
             </MenubarContent>
         </MenubarMenu>
     </Menubar>

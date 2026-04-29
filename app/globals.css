@@ -138,7 +138,20 @@
     @apply bg-background text-foreground;
   }
 
+  p {
+    @apply text-lg m-2;
+  }
+
   html {
     @apply font-sans;
   }
+
+  h2 {
+    @apply text-2xl text-umd-blue font-bold;
+  }
+
+  h3 {
+    @apply text-xl font-bold text-umd-blue;
+  }
+
 }
