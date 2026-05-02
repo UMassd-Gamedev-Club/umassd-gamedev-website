@@ -7,10 +7,12 @@ import {
     DialogTrigger,
 } from "@/components/ui/dialog"
 import { Button } from "../ui/button";
+import { GameSubmitForm } from "./submit-form";
 
 export default function SubmitGame() {
     return (<Dialog>
-        <DialogTrigger className=" font-bold hover:cursor-pointer"><Button>Submit a game</Button></DialogTrigger>
+
+        <DialogTrigger className=" font-bold hover:cursor-pointer bg-primary p-2 rounded-md text-secondary">Submit a game</DialogTrigger>
         <DialogContent className="min-w-[calc(90%)] md:min-w-1/2">
             <DialogHeader>
                 <DialogTitle className="text-2xl font-bold">Submit Game</DialogTitle>
@@ -19,6 +21,7 @@ export default function SubmitGame() {
                     Your submission will generate a password.
                     Keep this password in case you want to edit information about your game or delete it.
                 </p>
+                <GameSubmitForm />
             </DialogHeader>
         </DialogContent>
     </Dialog>);

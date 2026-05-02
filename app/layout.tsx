@@ -4,7 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Menu from "@/components/layout/menu";
 import Header from "@/components/layout/header";
-
+import { Toaster } from "sonner";
 const notoSans = Noto_Sans({ subsets: ['latin'], variable: '--font-sans' });
 
 const geistSans = Geist({
@@ -39,6 +39,7 @@ export default function RootLayout({
           <div className="flex-1 w-full mx-auto md:w-3/4">
             {children}</div>
         </div>
+        <Toaster></Toaster>
       </body>
     </html>
   );
